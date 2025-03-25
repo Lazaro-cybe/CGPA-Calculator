@@ -23,3 +23,14 @@ double gradePoint(char grade) {
     default: return -1.0;
     }
 }
+bool isValidGrade(char grade) {
+    grade = touper(grade);
+    return (grade == 'A' || grade == 'B' || grade == 'C' || grade == 'D' || grade == 'F');
+}
+
+int main() {
+    int numSemester, numCourses;
+    double totlCredits =0, totalGradePoints =0;
+    vector<vector<Course>> allSemesters;
+
+    cout << "=========================== CPGA CALCULATOR ============================\N";
