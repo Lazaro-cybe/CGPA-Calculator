@@ -46,3 +46,7 @@ cout << "Enter number of semesters: ";
 
 vector<Course> semesterCourses;
         double semesterCredits = 0, semesterGradePoints = 0;
+
+for (int i = 0; i < numCourses; i++) {
+            Course course;
+            cout << "\nCourse " << i + 1 << ":\n";
