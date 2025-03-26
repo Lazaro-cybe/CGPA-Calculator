@@ -50,3 +50,7 @@ vector<Course> semesterCourses;
 for (int i = 0; i < numCourses; i++) {
             Course course;
             cout << "\nCourse " << i + 1 << ":\n";
+
+cout << "  Enter course name: ";
+            cin.ignore();
+            getline(cin, course.name);
