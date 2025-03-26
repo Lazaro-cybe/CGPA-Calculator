@@ -57,3 +57,7 @@ cout << "  Enter course name: ";
 
  cout << "  Enter credit hours: ";
             cin >> course.credits;
+
+do {
+                cout << "  Enter grade (A, B, C, D, F): ";
+                cin >> course.grade;
