@@ -34,3 +34,15 @@ int main() {
     vector<vector<Course>> allSemesters;
 
     cout << "=========================== CPGA CALCULATOR ============================\N";
+
+cout << "Enter number of semesters: ";
+    cin >> numSemesters;
+    
+    for (int sem = 0; sem < numSemesters; sem++) {
+        cout << "\n========== Semester " << sem + 1 << " ==========\n";
+        
+        cout << "Enter number of courses for semester " << sem + 1 << ": ";
+        cin >> numCourses;
+
+vector<Course> semesterCourses;
+        double semesterCredits = 0, semesterGradePoints = 0;
