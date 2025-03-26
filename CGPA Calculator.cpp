@@ -54,3 +54,6 @@ for (int i = 0; i < numCourses; i++) {
 cout << "  Enter course name: ";
             cin.ignore();
             getline(cin, course.name);
+
+ cout << "  Enter credit hours: ";
+            cin >> course.credits;
