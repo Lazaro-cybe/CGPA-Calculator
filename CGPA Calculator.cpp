@@ -80,3 +80,16 @@ semesterCredits += course.credits;
 double semesterGPA = semesterGradePoints / semesterCredits;
         cout << fixed << setprecision(2);
         cout << "\nSemester " << sem + 1 << " GPA: " << semesterGPA << endl;
+
+totalCredits += semesterCredits;
+        totalGradePoints += semesterGradePoints;
+        
+        allSemesters.push_back(semesterCourses);
+    }
+double cgpa = totalGradePoints / totalCredits;
+
+cout << "\n==================== FINAL RESULTS ====================\n";
+    cout << fixed << setprecision(2);
+    cout << "Total Credits: " << totalCredits << endl;
+    cout << "Total Grade Points: " << totalGradePoints << endl;
+    cout << "Cumulative GPA (CGPA): " << cgpa << endl;
