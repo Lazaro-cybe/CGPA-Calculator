@@ -76,3 +76,7 @@ semesterCredits += course.credits;
             
             semesterCourses.push_back(course);
         }
+
+double semesterGPA = semesterGradePoints / semesterCredits;
+        cout << fixed << setprecision(2);
+        cout << "\nSemester " << sem + 1 << " GPA: " << semesterGPA << endl;
