@@ -61,3 +61,10 @@ cout << "  Enter course name: ";
 do {
                 cout << "  Enter grade (A, B, C, D, F): ";
                 cin >> course.grade;
+do {
+                cout << "  Enter grade (A, B, C, D, F): ";
+                cin >> course.grade;
+                if (!isValidGrade(course.grade)) {
+                    cout << "  Invalid grade! Please enter A, B, C, D, or F.\n";
+                }
+            } while (!isValidGrade(course.grade));
