@@ -68,3 +68,11 @@ do {
                     cout << "  Invalid grade! Please enter A, B, C, D, or F.\n";
                 }
             } while (!isValidGrade(course.grade));
+
+course.gradePoint = gradeToPoint(course.grade);
+
+semesterCredits += course.credits;
+            semesterGradePoints += course.credits * course.gradePoint;
+            
+            semesterCourses.push_back(course);
+        }
